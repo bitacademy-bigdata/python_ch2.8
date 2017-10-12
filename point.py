@@ -12,6 +12,12 @@ class Point:
     def __del__(self):
         Point.count_of_instance -= 1
 
+    def __str__(self):
+        return "Point(x={0}, y={1})".format(self.x, self.y)
+
+    def __repr__(self):
+        return "Point(x={0}, y={1})".format(self.x, self.y)
+
     def set_x(self, x):
         self.x = x
 
